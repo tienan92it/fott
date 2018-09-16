@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#263238</color>
+    <color name="colorPrimaryDark">#131a1d</color>
+    <color name="colorAccent">#263238</color>
+
+    <color name="toolbar_color">#263238</color>
+    <color name="bg_menu_color">#37474f</color>
+    <color name="text_menu_color">#fff</color>
+    <color name="bg_feed_color">#455a64</color>
+    <color name="text_feed_date_color">#b0bec5</color>
+    <color name="feed_card_bg_color">#263238</color>
+    <color name="bg_feed_detail_color">#455a64</color>
+</resources>

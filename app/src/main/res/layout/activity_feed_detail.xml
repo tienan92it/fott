@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_feed_detail_color">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.android.volley.toolbox.NetworkImageView
+            android:id="@+id/feed_image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/drawer_image" />
+
+        <ImageView
+            android:id="@+id/back_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/feed_image"
+            android:layout_alignTop="@+id/feed_image"
+            android:layout_margin="@dimen/feed_margin"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_chevron_left_white_36dp" />
+
+    </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/feed_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/feed_image"
+                android:layout_alignLeft="@+id/feed_image"
+                android:layout_marginLeft="@dimen/feed_margin"
+                android:layout_marginRight="@dimen/feed_margin"
+                android:layout_marginTop="@dimen/feed_margin"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/large_text_size" />
+
+            <TextView
+                android:id="@+id/feed_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/feed_margin"
+                android:layout_marginRight="@dimen/feed_margin"
+                android:layout_marginTop="@dimen/feed_margin"
+                android:textColor="@color/text_feed_date_color"
+                android:textSize="@dimen/small_text_size" />
+
+            <TextView
+                android:id="@+id/feed_ingress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/feed_margin"
+                android:lineSpacingExtra="5dp"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/small_text_size" />
+
+            <TextView
+                android:id="@+id/feed_subject"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/feed_margin"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/medium_text_size" />
+
+            <TextView
+                android:id="@+id/feed_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/feed_margin"
+                android:layout_marginLeft="@dimen/feed_margin"
+                android:layout_marginRight="@dimen/feed_margin"
+                android:lineSpacingExtra="5dp"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/small_text_size" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/feed_margin_bottom"
+    android:layout_marginLeft="@dimen/cardview_margin"
+    android:layout_marginRight="@dimen/cardview_margin"
+    android:layout_marginTop="@dimen/cardview_margin">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/feed_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card_view:cardCornerRadius="2dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/image_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.android.volley.toolbox.NetworkImageView
+                    android:id="@+id/feed_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/drawer_image" />
+
+                <TextView
+                    android:id="@+id/feed_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/feed_image"
+                    android:layout_alignLeft="@+id/feed_image"
+                    android:layout_margin="@dimen/feed_margin"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/large_text_size" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/feed_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/feed_card_bg_color"
+                android:orientation="horizontal"
+                android:weightSum="10">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="9"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/feed_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/feed_margin"
+                        android:text="Today June, 08:00"
+                        android:textColor="@color/text_feed_date_color"
+                        android:textSize="@dimen/small_text_size" />
+
+                    <TextView
+                        android:id="@+id/feed_ingress"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/feed_margin"
+                        android:layout_marginLeft="@dimen/feed_margin"
+                        android:ellipsize="end"
+                        android:lineSpacingExtra="5dp"
+                        android:maxLines="4"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/small_text_size" />
+
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/detail_entry"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_chevron_right_white_24dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+</RelativeLayout>

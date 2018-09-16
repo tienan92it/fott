@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">FOTT</string>
+
+    <string name="fott_feed_title">FOTT Feed</string>
+    <string name="trips_title">Trips</string>
+    <string name="people_title">People</string>
+</resources>

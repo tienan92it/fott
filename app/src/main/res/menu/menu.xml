@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <group
+        android:id="@+id/default_group"
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/fott_feed"
+            android:checked="true"
+            android:icon="@drawable/ic_view_list_white_24dp"
+            android:title="@string/fott_feed_title" />
+
+        <item
+            android:id="@+id/trips"
+            android:checked="false"
+            android:icon="@drawable/ic_place_white_24dp"
+            android:title="@string/trips_title" />
+
+        <item
+            android:id="@+id/people"
+            android:checked="false"
+            android:icon="@drawable/ic_people_white_24dp"
+            android:title="@string/people_title" />
+
+    </group>
+</menu>
